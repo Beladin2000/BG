@@ -1,0 +1,5 @@
+---
+-name: Windows Server Ping
+tasks:
+win_ping: 
+hosts: all
