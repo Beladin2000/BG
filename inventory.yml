@@ -1,0 +1,10 @@
+all:
+  hosts:
+    windows11:
+      ansible_host: 192.168.1.17
+      ansible_user: "Administrator"  # Use the local user in WORKGROUP
+      ansible_password: "Peja4ever"  # Enclose special characters in quotes
+      ansible_connection: winrm
+      ansible_winrm_transport: basic  # Use basic authentication for WORKGROUP
+      ansible_winrm_server_cert_validation: ignore  # Optionally ignore SSL certificate validation if needed
+
