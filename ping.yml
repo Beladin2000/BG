@@ -1,5 +1,8 @@
 ---
--name: Windows Server Ping
-tasks:
-win_ping: 
-hosts: all
+- name: Windows Server Ping
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: Test connectivity to Windows machine
+      win_ping:
+      
