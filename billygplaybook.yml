@@ -1,0 +1,9 @@
+---
+- name: Create a text file on the desktop
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: Create billyg.txt file on desktop
+      win_file:
+        path: "C:\\Users\\{{ Administrator }}\\Desktop\\billyg.txt"
+        state: touch
