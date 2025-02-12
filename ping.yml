@@ -1,6 +1,6 @@
 ---
 - name: Windows Server Ping
-  hosts: all
+  hosts: lenovo-lab
   gather_facts: no
   tasks:
     - name: Test connectivity to Windows machine
